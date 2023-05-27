@@ -8,6 +8,7 @@ AFloater::AFloater()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	static_mesh_ = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CustomStaticMesh"));
 
 }
 

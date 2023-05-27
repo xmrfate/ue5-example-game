@@ -15,6 +15,9 @@ public:
 	// Sets default values for this actor's properties
 	AFloater();
 
+	UPROPERTY(VisibleAnywhere, Category="ActorMeshComponents")
+	UStaticMeshComponent* static_mesh_{ nullptr };
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
